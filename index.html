@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>FE Chat</h1>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#" id="aboutLink">About</a>
+      <a href="#" id="logoutLink">Logout</a>
+    </nav>
+  </header>
+
+  
+  <section id="loginPage" class="page active">
+    <div class="login-container">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Enter Username" required>
+      <input type="password" id="password" placeholder="Enter Password" required>
+      <button onclick="login()">Login</button>
+    </div>
+  </section>
+
+  
+  <section id="homePage" class="page">
+    <div class="chat-container">
+      <div class="chat-box" id="chatBox">
+        <div class="message received">Hello! Welcome to FE Chat 👋</div>
+      </div>
+      <div class="input-area">
+        <input type="text" id="msgInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="aboutPage" class="page">
+    <div class="about">
+      <h2>About FE Chat</h2>
+      <p>
+        FE Chat is a simple front-end chat interface built using HTML, CSS, and JavaScript.
+        It demonstrates UI design, navigation, and basic interactivity without backend connectivity.
+      </p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
